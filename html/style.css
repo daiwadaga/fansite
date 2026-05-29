@@ -213,8 +213,8 @@ html {
 }
 
 .music-card {
-    width: 260px;
-    height:520px
+    width: 280px;
+    height:aut;
     background-color: #ffffff;
     border-radius: 8px;
     overflow: hidden;
@@ -461,4 +461,5 @@ span{
     object-fit: cover;
     display: block;
 }
+
 
