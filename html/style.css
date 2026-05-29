@@ -1,0 +1,408 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.totop {
+    position: fixed; 
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    color: #7d7d7d;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    z-index: 9999;
+}
+
+.totop:hover {
+    background-color: #002244;
+    opacity: 0.9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Serif JP', 'Georgia', 'Yu Mincho', '游明朝', serif !important;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+.nav-bar {
+    background-color: #ffffff; 
+    border-bottom: 2px solid #000000; 
+    padding: 15px 0; 
+    width: 100% !important;
+}
+
+.nav-container {
+    max-width: 1000px; 
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex !important;
+    justify-content: space-between !important; 
+    align-items: center !important;
+}
+
+.nav-menu {
+    list-style: none !important; 
+    display: flex !important;  
+    gap: 30px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.nav-menu li {
+    display: inline-block !important;
+}
+
+.nav-sns {
+    display: flex !important;
+    gap: 20px !important;
+}
+
+.nav-bar a, .nav-sns a {
+    text-decoration: none !important;
+    color: #A58CDC !important;
+    font-weight: bold !important; 
+    font-size: 14px !important; 
+    letter-spacing: 0.05em !important; 
+}
+
+.nav-bar a:hover, .nav-sns a:hover {
+    color: #666666 !important; 
+}
+
+.slider-container {
+    width: 100%;
+    max-width: 800px; 
+    margin: 40px auto;
+    overflow: hidden; 
+    position: relative;
+    border-radius: 8px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.slider-wrapper {
+    display: flex;
+    width: 300%; 
+    animation: slideLoop 15s infinite; 
+}
+
+.slide-item {
+    width: 100%;
+    position: relative;
+}
+
+.slide-item img {
+    width: 100%;
+    height: 450px; 
+    object-fit: cover; 
+    object-position: center center;
+    display: block;
+}
+
+.slide-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+@keyframes slideLoop {
+    0%, 25% { transform: translateX(0); }
+    33%, 58% { transform: translateX(-33.33%); }
+    66%, 91% { transform: translateX(-66.66%); }
+    100% { transform: translateX(0); }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.profile-section {
+    padding: 100px 20px;
+    background-color: #ece4f3;
+    scroll-margin-top: 50px;
+}
+
+.profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profile-image, .profile-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.profile-text h2 {
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+    color: #A58CDC;
+    margin-bottom: 5px;
+}
+
+.profile-text h3 {
+    font-size: 1.2rem;
+    color: #A58CDC;
+    margin-bottom: 30px;
+}
+
+.profile-text dt {
+    font-weight: bold;
+    color: #A58CDC;
+    border-left: 3px solid #93d2d3;
+    padding-left: 10px;
+    margin-top: 15px;
+}
+
+.profile-text dd {
+    color: #A58CDC;
+    margin-left: 0;
+    margin-top: 5px;
+    line-height: 1.6;
+}
+
+.music-section {
+    padding: 100px 20px;
+    background-color: #fafafa;
+    scroll-margin-top: 50px;
+}
+
+.music-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.music-container h2 {
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+    color: #A58CDC;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.music-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.music-card {
+    flex: 1;
+    min-width: 260px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+    transition: transform 0.3s ease;
+}
+
+.music-card a {
+    text-decoration: none !important;
+    display: block;
+}
+
+.music-card:hover {
+    transform: translateY(-5px);
+}
+
+.music-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+}
+
+.music-info {
+    padding: 20px;
+}
+
+.music-tag {
+    display: inline-block;
+    padding: 3px 10px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+.music-tag.new {
+    background-color: #A77171;
+    color: #ffffff;
+}
+
+.music-tag.cover {
+    background-color: #111111;
+    color: #ffffff;
+}
+
+.music-tag.original {
+    background-color: #93d2d3;
+    color: #ffffff;
+}
+
+.music-info h3 {
+    font-size: 1rem;
+    color: #A58CDC;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    height: 3rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.music-info p {
+    font-size: 0.8rem;
+    color: #888888;
+}
+
+.group-image {
+    width: 600px;
+    height: auto;
+}
+
+.group-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.group-section {
+    padding: 100px 20px;
+    background-color: #696969;
+    scroll-margin-top: 50px;
+}
+
+.group-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.group-container h2 {
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+    color: #fafafa;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.group-container h2 {
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+span{
+    color:#a52a2a;
+    font-weight:bold;
+}
+
+.group-text h3 {
+    font-size: 30px ;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.group-text dt {
+    font-weight: bold;
+    color: #fafafa;
+    border-left: 3px solid #a52a2a;
+    padding-left: 10px;
+    margin-top: 15px;
+}
+
+.group-text dd {
+    color: #ffffff;
+    margin-left: 0;
+    margin-top: 5px;
+    line-height: 1.6;
+}
+
+.h3-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.h3-area h3 {
+    margin: 0;
+}
+
+.youtube-btn {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    transition: transform 0.2s;
+}
+
+.youtube-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.youtube-btn:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+    .profile-container, .music-grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .profile-image, .profile-text, .music-card {
+        width: 100% !important;
+        min-width: 100%;
+    }
+    .group-image, .group-text {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 10px;
+    }
+    .slider-container {
+        max-width: 100%;
+        margin: 20px auto;
+    }
+    .slide-item img {
+        height: 250px;
+    }
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nav-menu {
+        gap: 15px !important;
+    }
+}
